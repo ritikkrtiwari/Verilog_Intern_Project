@@ -1,71 +1,66 @@
-🛠️ Verilog Internship Projects
-This repository contains Verilog codes and testbenches developed as part of my VLSI internship and learning journey.
-Each project focuses on designing, simulating, and understanding fundamental digital modules.
+## 🛠️ Verilog Internship Projects
+This repository contains simple Verilog design and testbench projects I built as part of my VLSI internship and learning journey.  
+Each project focuses on designing, simulating, and understanding core digital logic modules.
 
-✅ PROJECT 1 – 2:1 Multiplexer (MUX2_1)
-A basic 2:1 multiplexer that:
+---
 
-Selects between two input signals based on a single select line
+✅ **PROJECT 1 – 2:1 Multiplexer (MUX2_1)**  
+A basic digital circuit that:
 
-Outputs the chosen input
+- Selects between two input signals based on a single select line
+- Outputs the chosen input
+- Tested and verified using a functional testbench
 
-Verified using a functional testbench
+📂 **Files included:**
 
-📂 Files:
+- `MUX2_1.v` – Verilog design file
+- `tb_MUX2_1.v` – Testbench file for simulation
 
-Verilog design file (MUX2_1.v)
+🛠 **Tech:** Verilog HDL, simulation in Vivado, testbench design
 
-Testbench file for simulation (tb_MUX2_1.v)
+---
 
-🛠 Tech: Verilog HDL, testbench creation, simulation in Vivado
+✅ **PROJECT 2 – 2-input AND Gate (AND2_input)**  
+A simple combinational circuit that:
 
-✅ PROJECT 2 – 2-input AND Gate (AND2_input)
-A simple digital logic module that:
+- Computes logical AND of two single-bit inputs (`a` and `b`)
+- Outputs the result (`c`)
+- Verified by applying all input combinations in a testbench
 
-Computes the logical AND of two input signals (a and b)
+📂 **Files included:**
 
-Outputs the result to c
+- `AND2_input.v` – Verilog design file
+- `tb_AND2_input.v` – Testbench file for simulation
 
-Verified using a functional testbench that systematically applies all four possible input combinations and observes the output
+🛠 **Tech:** Verilog HDL, simulation in Vivado, testbench design
 
-📂 Files:
+---
 
-Verilog design file (AND2_input.v)
+🚀 **How to run simulations**
 
-Testbench file for simulation (tb_AND2_input.v)
+- Open Vivado (or any Verilog simulator)
+- Add the design and testbench files to your project
+- Set the testbench as the top module
+- Run simulation and observe waveform or console output
 
-🛠 Tech: Verilog HDL, testbench creation, simulation in Vivado
+---
 
-📌 More projects coming soon...
+📌 **Upcoming improvements**
 
-🚀 How to run simulations
+- Better folder organization (one folder per project)
+- Waveform screenshots
+- Markdown explanations for each module
+- GitHub Actions to check code formatting
 
-Open Vivado (or any Verilog simulator of your choice)
+---
 
-Add the Verilog design file and corresponding testbench file to your project
+📜 **License**
 
-Set the testbench as the top module
+Educational use only – feel free to fork and explore!
 
-Run behavioral simulation to verify the functionality
+---
 
-Observe console outputs and waveform results
+🤝 **Contributions**
 
-📌 Upcoming improvements
-
-Better folder organization (e.g., separate folders per project)
-
-Waveform screenshots of simulation results
-
-Detailed Markdown explanations for each module’s working
-
-Possibly GitHub Actions to auto-check code style and syntax
-
-📜 License
-
-This project is for educational purposes.
-Feel free to fork, study, and explore!
-
-🤝 Contributions
-
-Currently, this is a personal learning repository.
-In the future, I might open it for contributions to include more basic digital designs and testbenches.
+Currently, this is a personal learning repo.  
+In the future, I might open it for contributions to add more digital modules and testbenches.
