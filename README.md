@@ -1,6 +1,7 @@
-## 🛠️ Verilog Internship Projects
-This repository contains simple Verilog design and testbench projects I built as part of my VLSI internship and learning journey.  
-Each project focuses on designing, simulating, and understanding core digital logic modules.
+## 🛠️ Verilog Projects
+This repository contains Verilog design and testbench projects that I built during my learning journey in Digital Design and VLSI fundamentals.  
+Each project focuses on designing, simulating, and understanding hierarchical and structural modeling concepts using Verilog HDL.
+
 
 ---
 
@@ -27,6 +28,35 @@ A simple combinational circuit that:
 - Outputs the result (`c`)
 - Verified by applying all input combinations in a testbench
 
+✅ **PROJECT 3 – 16-to-1 Multiplexer (MUX16to1)**  
+A hierarchical **structural design** of a 16:1 multiplexer built using smaller multiplexers.
+
+### 🧩 Description:
+- The **2-to-1 MUX** is designed using basic logic gates (`AND`, `OR`, `NOT`).
+- The **4-to-1 MUX** is built using **three 2-to-1 MUXes**.
+- The **16-to-1 MUX** is implemented using **five 4-to-1 MUXes**, demonstrating a clear hierarchical structure.
+- Verified through a **functional testbench** in Vivado simulator.
+
+### 📂 Files included:
+- `mux16to1.v` – Verilog design file (includes 2:1, 4:1, and 16:1 modules)
+- `tb_mux16to1.v` – Testbench file for simulation
+
+### 🧪 Simulation Results:
+- Successfully synthesized and simulated in **Xilinx Vivado 2025.1**  
+- Waveform verified with correct output selection for different input combinations  
+- Hierarchical schematic confirmed using synthesis view  
+
+### ⚙️ Tools & Technologies:
+- **HDL:** Verilog  
+- **Software:** Xilinx Vivado 2025.1  
+- **Modeling:** Structural Modeling  
+- **Verification:** Testbench & waveform analysis  
+
+---
+
+💡 *This project strengthened my understanding of hierarchical design, RTL synthesis, and structural modeling in Verilog HDL.*
+
+#Verilog #VLSI #FPGA #XilinxVivado #DigitalDesign #RTLDesign #HDL #EngineeringProjects
 📂 **Files included:**
 
 - `AND2_input.v` – Verilog design file
