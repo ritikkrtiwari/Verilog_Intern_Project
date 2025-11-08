@@ -53,10 +53,10 @@ A hierarchical **structural design** of a 16:1 multiplexer built using smaller m
 - **Verification:** Testbench & waveform analysis  
 
 ---
-✅ PROJECT 4 – 16-bit Ripple Carry Adder (adder16bit)
+**✅ PROJECT 4 – 16-bit Ripple Carry Adder (adder16bit)**
 A hierarchical structural design of a 16-bit Ripple Carry Adder (RCA) built using smaller modular adders.
 
-🧠 Description:
+**🧠 Description:**
 
 The 1-bit Full Adder is designed using basic logic gates (XOR, AND, OR).
 
@@ -68,13 +68,13 @@ The design includes status flag outputs — sign, zero, carry, parity, and overf
 
 Verified through a functional testbench in the Vivado simulator using multiple 16-bit input test vectors.
 
-📂 Files included:
+📂 **Files included:**
 
 adder16bit.v – Verilog design file (includes Full Adder, 4-bit Adder, and 16-bit Adder modules)
 
 tb_adder16.v – Testbench file for simulation
 
-🧪 Simulation Results:
+**🧪 Simulation Results:**
 
 Successfully synthesized and simulated in Xilinx Vivado 2025.1
 
@@ -84,12 +84,12 @@ Hierarchical structure confirmed in RTL and Synthesized Schematics
 
 FPGA implementation visualized using CARRY4 primitives for efficient carry propagation
 
-⚙️ Tools & Technologies:
+**⚙️ Tools & Technologies:**
 
-HDL: Verilog
+**HDL: Verilog
 Software: Xilinx Vivado 2025.1
 Modeling: Structural Modeling
-Verification: Testbench & waveform analysis
+Verification: Testbench & waveform analysis**
 💡 *This project strengthened my understanding of hierarchical design, RTL synthesis, and structural modeling in Verilog HDL.*
 
 #Verilog #VLSI #FPGA #XilinxVivado #DigitalDesign #RTLDesign #HDL #EngineeringProjects
