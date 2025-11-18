@@ -105,7 +105,7 @@ Verification: Testbench & waveform analysis**
 
 ---
 
-✅ PROJECT 5 - 16-bit Carry Lookahead Adder (CLA) ➕
+**✅ PROJECT 5 - 16-bit Carry Lookahead Adder (CLA) **
 
 A high-speed arithmetic circuit designed using a hierarchical and structural approach.
 
@@ -117,17 +117,17 @@ The 16-bit adder is constructed by cascading four 4-bit CLA blocks.
 
 Tested and verified through a functional testbench.
 
-Description:
+**Description:**
 cla4 (4-bit CLA): This is the base structural block. It uses standard logic expressions to generate the internal carries (c1 ,c2 ,c3) directly from the Gi , Pi signals and the input carry (Cin), minimizing propagation delay.
 
 cla16 (16-bit CLA): This module uses the structural modeling technique by instantiating four separate cla4 modules and connecting their carry outputs (Cout) to the next block's carry input (Cin) in a cascaded manner.
 
-Files included:
+**Files included:**
 16bit_cla.v – Verilog design file (includes cla4 and cla16 modules)
 
 tb_16bit_cla.v – Testbench file for simulation
 
-Simulation Results:
+**Simulation Results:**
 Successfully synthesized and simulated in a VLSI tool (e.g., Vivado/ModelSim).
 
 Test cases verified correct sum (S) and carry-out (Cout) for various inputs, including overflow cases (e.g., FFFF + 0001).
@@ -135,9 +135,9 @@ Test cases verified correct sum (S) and carry-out (Cout) for various inputs, inc
 Tools & Technologies:
 HDL: Verilog
 
-Modeling: Structural Modeling, Hierarchical Design
+**Modeling**: Structural Modeling, Hierarchical Design
 
-Verification: Testbench & waveform analysis
+**Verification**: Testbench & waveform analysis
 
 🚀 **How to run simulations**
 
