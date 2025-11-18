@@ -106,15 +106,10 @@ Verification: Testbench & waveform analysis**
 ---
 
 **✅ PROJECT 5 - 16-bit Carry Lookahead Adder (CLA) **
-
 A high-speed arithmetic circuit designed using a hierarchical and structural approach.
-
 Computes the sum of two 16-bit binary numbers.
-
 The high speed is achieved by calculating the carries in parallel using Generate (G) and Propagate (P) signals within 4-bit blocks.
-
 The 16-bit adder is constructed by cascading four 4-bit CLA blocks.
-
 Tested and verified through a functional testbench.
 
 **Description:**
