@@ -27,6 +27,12 @@ A simple combinational circuit that:
 - Computes logical AND of two single-bit inputs (`a` and `b`)
 - Outputs the result (`c`)
 - Verified by applying all input combinations in a testbench
+- 📂 **Files included:**
+
+- `AND2_input.v` – Verilog design file
+- `tb_AND2_input.v` – Testbench file for simulation
+
+🛠 **Tech:** Verilog HDL, simulation in Vivado, testbench design
 
 ---
 
@@ -95,14 +101,43 @@ Verification: Testbench & waveform analysis**
 💡 *This project strengthened my understanding of hierarchical design, RTL synthesis, and structural modeling in Verilog HDL.*
 
 #Verilog #VLSI #FPGA #XilinxVivado #DigitalDesign #RTLDesign #HDL #EngineeringProjects
-📂 **Files included:**
 
-- `AND2_input.v` – Verilog design file
-- `tb_AND2_input.v` – Testbench file for simulation
-
-🛠 **Tech:** Verilog HDL, simulation in Vivado, testbench design
 
 ---
+
+✅ PROJECT 5 - 16-bit Carry Lookahead Adder (CLA) ➕
+
+A high-speed arithmetic circuit designed using a hierarchical and structural approach.
+
+Computes the sum of two 16-bit binary numbers.
+
+The high speed is achieved by calculating the carries in parallel using Generate (G) and Propagate (P) signals within 4-bit blocks.
+
+The 16-bit adder is constructed by cascading four 4-bit CLA blocks.
+
+Tested and verified through a functional testbench.
+
+Description:
+cla4 (4-bit CLA): This is the base structural block. It uses standard logic expressions to generate the internal carries (c1 ,c2 ,c3) directly from the Gi , Pi signals and the input carry (Cin), minimizing propagation delay.
+
+cla16 (16-bit CLA): This module uses the structural modeling technique by instantiating four separate cla4 modules and connecting their carry outputs (Cout) to the next block's carry input (Cin) in a cascaded manner.
+
+Files included:
+16bit_cla.v – Verilog design file (includes cla4 and cla16 modules)
+
+tb_16bit_cla.v – Testbench file for simulation
+
+Simulation Results:
+Successfully synthesized and simulated in a VLSI tool (e.g., Vivado/ModelSim).
+
+Test cases verified correct sum (S) and carry-out (Cout) for various inputs, including overflow cases (e.g., FFFF + 0001).
+
+Tools & Technologies:
+HDL: Verilog
+
+Modeling: Structural Modeling, Hierarchical Design
+
+Verification: Testbench & waveform analysis
 
 🚀 **How to run simulations**
 
