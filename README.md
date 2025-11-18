@@ -28,6 +28,8 @@ A simple combinational circuit that:
 - Outputs the result (`c`)
 - Verified by applying all input combinations in a testbench
 
+---
+
 ✅ **PROJECT 3 – 16-to-1 Multiplexer (MUX16to1)**  
 A hierarchical **structural design** of a 16:1 multiplexer built using smaller multiplexers.
 
