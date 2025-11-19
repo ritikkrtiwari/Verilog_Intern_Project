@@ -137,6 +137,75 @@ HDL: Verilog
 
 **Verification**: Testbench & waveform analysis
 
+---
+
+**✅ PROJECT 6 – Cyclic Lamp Controller (FSM Design)**
+
+A sequential Moore FSM that cycles through Green → Yellow → Red lights on every clock pulse, implemented in Verilog and verified using Vivado simulation & synthesis.
+
+**✨ Description:**
+
+A 3-state Moore Finite State Machine is designed to control the lamp sequence.
+
+The states represent:
+
+S0 → GREEN (010)
+
+S1 → YELLOW (001)
+
+S2 → RED (100)
+
+Output depends only on the current state, following Moore FSM rules.
+
+State transitions occur at every positive edge of the clock.
+
+Functional behavior confirmed using a testbench in Vivado simulator.
+
+Synthesized design shows one-hot state encoding using FDRE flip-flops.
+
+**📁 Files Included:**
+
+cyclic_lamp.v – Main FSM module (state register + next state logic + output logic)
+
+test_cyclic_lamp.v – Testbench used for waveform simulation
+
+**📊 Simulation Results:**
+
+Successfully simulated in Xilinx Vivado 2025.1.
+
+Waveform matches expected sequence:
+
+GREEN (010) → YELLOW (001) → RED (100) → repeat...
+
+
+Proper state transitions validated across entire simulation time.
+
+Timing behavior and cycle repetition verified.
+
+**🧩 Synthesis Results:**
+
+Vivado infers three FDRE flip-flops implementing one-hot state encoding.
+
+Output logic optimized using LUTs.
+
+Clean RTL and Technology schematic generated after synthesis.
+
+Global clock routing through IBUF → BUFG confirmed.
+
+---
+
+**🛠 Tools & Technologies:**
+
+HDL: Verilog
+
+Software: Xilinx Vivado 2025.1
+
+Modeling: FSM (Moore Machine)
+
+Verification: Testbench + Behavioral Simulation
+
+Analysis: RTL Schematic & Waveform inspection
+
 🚀 **How to run simulations**
 
 - Open Vivado (or any Verilog simulator)
