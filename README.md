@@ -194,6 +194,87 @@ Global clock routing through IBUF → BUFG confirmed.
 
 ---
 
+**🚀 PROJECT 7 – Serial Adder (FSM-Based Design in Verilog)**
+
+This project implements a 1-bit Serial Adder using a Finite State Machine (FSM) in Verilog HDL. The design performs bit-by-bit addition of two binary numbers (A and B) along with carry handling, following Mealy machine principles. The complete design is simulated and synthesized using Xilinx Vivado, and the resulting RTL schematic confirms correct hardware generation.
+
+**✨ Description**
+
+The Serial Adder is built using a two-state FSM that keeps track of the carry at every clock cycle.
+The two states represent:
+
+**ZERO – No carry present**
+
+**ONE – Carry is present**
+
+At every positive clock edge, the circuit takes one bit from A and B (LSB first), calculates the sum, and determines whether the carry should be propagated to the next cycle. The output depends on both the present state and the current inputs, following Mealy machine behavior.
+
+The design correctly adds the example inputs A = 0110 and B = 0010, fed serially from LSB to MSB. Carry transitions between ZERO and ONE state as required, and the output bit stream is generated cycle-by-cycle.
+
+**📂 Files Included**
+
+**serial_adder.v** – RTL code for the FSM-based Serial Adder (carry logic + next-state logic + sum output).
+
+**tb_serial_adder.v** – Testbench to simulate the sequential addition and verify waveform correctness.
+
+Screenshots (to be added by user):
+
+Verilog code
+
+Simulation waveform
+
+Synthesized RTL schematic
+schematic
+
+**🧪 Simulation Results**
+
+The design was simulated using Xilinx Vivado 2025.1. Waveforms clearly show correct serial addition behavior for the selected inputs. The sum output changes precisely at the clock edges, and the carry state switches between ZERO and ONE exactly as expected.
+
+The simulation confirms:
+
+Proper functioning of FSM-based carry tracking
+
+Correct bit-wise addition for all input cycles
+
+Stable and glitch-free output generation
+
+Perfect Mealy-style timing response
+
+**🛠 Synthesis Results**
+
+The design was synthesized on the Artix-7 device (xc7a50tcsg324-1).
+Vivado successfully inferred the FSM structure, implemented the carry flip-flop, and generated optimized LUT-based combinational logic for the next-state and output equations.
+
+The RTL and Technology Schematics show:
+
+A clean representation of the FSM
+
+Single flip-flop for carry state
+
+Proper logic reduction by synthesis
+
+No unwanted latches or redundant hardware
+
+Stable routing with ease of timing closure
+
+**🌱 Key Learnings**
+
+Through this project, the following concepts were reinforced:
+
+Designing arithmetic circuits using FSMs
+
+Implementing serial addition in hardware
+
+Modeling Mealy machines in Verilog
+
+Writing effective Verilog testbenches
+
+Understanding Vivado simulation and synthesis flow
+
+Interpreting RTL schematic and hardware mapping
+
+---
+
 **🛠 Tools & Technologies:**
 
 HDL: Verilog
