@@ -155,19 +155,13 @@ S1 → YELLOW (001)
 
 S2 → RED (100)
 
-Output depends only on the current state, following Moore FSM rules.
+Output depends only on the current state, following Moore FSM rules. and State transitions occur at every positive edge of the clock.
 
-State transitions occur at every positive edge of the clock.
-
-Functional behavior confirmed using a testbench in Vivado simulator.
-
-Synthesized design shows one-hot state encoding using FDRE flip-flops.
+Functional behavior confirmed using a testbench in Vivado simulator.Synthesized design shows one-hot state encoding using FDRE flip-flops.
 
 **📁 Files Included:**
 
-cyclic_lamp.v – Main FSM module (state register + next state logic + output logic)
-
-test_cyclic_lamp.v – Testbench used for waveform simulation
+cyclic_lamp.v – Main FSM module (state register + next state logic + output logic) and test_cyclic_lamp.v – Testbench used for waveform simulation
 
 **📊 Simulation Results:**
 
@@ -178,17 +172,13 @@ Waveform matches expected sequence:
 GREEN (010) → YELLOW (001) → RED (100) → repeat...
 
 
-Proper state transitions validated across entire simulation time.
-
-Timing behavior and cycle repetition verified.
+Proper state transitions validated across entire simulation time. Timing behavior and cycle repetition verified.
 
 **🧩 Synthesis Results:**
 
 Vivado infers three FDRE flip-flops implementing one-hot state encoding.
 
-Output logic optimized using LUTs.
-
-Clean RTL and Technology schematic generated after synthesis.
+Output logic optimized using LUTs.Clean RTL and Technology schematic generated after synthesis.
 
 Global clock routing through IBUF → BUFG confirmed.
 
@@ -207,9 +197,7 @@ The two states represent:
 
 **ONE – Carry is present**
 
-At every positive clock edge, the circuit takes one bit from A and B (LSB first), calculates the sum, and determines whether the carry should be propagated to the next cycle. The output depends on both the present state and the current inputs, following Mealy machine behavior.
-
-The design correctly adds the example inputs A = 0110 and B = 0010, fed serially from LSB to MSB. Carry transitions between ZERO and ONE state as required, and the output bit stream is generated cycle-by-cycle.
+At every positive clock edge, the circuit takes one bit from A and B (LSB first), calculates the sum, and determines whether the carry should be propagated to the next cycle. The output depends on both the present state and the current inputs, following Mealy machine behavior.The design correctly adds the example inputs A = 0110 and B = 0010, fed serially from LSB to MSB. Carry transitions between ZERO and ONE state as required, and the output bit stream is generated cycle-by-cycle.
 
 **📂 Files Included**
 
@@ -217,14 +205,7 @@ The design correctly adds the example inputs A = 0110 and B = 0010, fed serially
 
 **tb_serial_adder.v** – Testbench to simulate the sequential addition and verify waveform correctness.
 
-Screenshots (to be added by user):
-
-Verilog code
-
-Simulation waveform
-
-Synthesized RTL schematic
-schematic
+Screenshots (to be added by user):Verilog code , Simulation waveform , Synthesized RTL schematic , schematic
 
 **🧪 Simulation Results**
 
@@ -232,46 +213,18 @@ The design was simulated using Xilinx Vivado 2025.1. Waveforms clearly show corr
 
 The simulation confirms:
 
-Proper functioning of FSM-based carry tracking
-
-Correct bit-wise addition for all input cycles
-
-Stable and glitch-free output generation
-
-Perfect Mealy-style timing response
+Proper functioning of FSM-based carry tracking , Correct bit-wise addition for all input cycles , Stable and glitch-free output generation , Perfect Mealy-style timing response
 
 **🛠 Synthesis Results**
 
 The design was synthesized on the Artix-7 device (xc7a50tcsg324-1).
 Vivado successfully inferred the FSM structure, implemented the carry flip-flop, and generated optimized LUT-based combinational logic for the next-state and output equations.
 
-The RTL and Technology Schematics show:
-
-A clean representation of the FSM
-
-Single flip-flop for carry state
-
-Proper logic reduction by synthesis
-
-No unwanted latches or redundant hardware
-
-Stable routing with ease of timing closure
+The RTL and Technology Schematics show: A clean representation of the FSM , Single flip-flop for carry state , Proper logic reduction by synthesis , No unwanted latches or redundant hardware , Stable routing with ease of timing closure
 
 **🌱 Key Learnings**
 
-Through this project, the following concepts were reinforced:
-
-Designing arithmetic circuits using FSMs
-
-Implementing serial addition in hardware
-
-Modeling Mealy machines in Verilog
-
-Writing effective Verilog testbenches
-
-Understanding Vivado simulation and synthesis flow
-
-Interpreting RTL schematic and hardware mapping
+Through this project, the following concepts were reinforced:Designing arithmetic circuits using FSMs ,Implementing serial addition in hardware , Modeling Mealy machines in Verilog , Writing effective Verilog testbenches , Understanding Vivado simulation and synthesis flow , Interpreting RTL schematic and hardware mapping
 
 ---
 
